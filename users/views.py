@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.core.context_processors import csrf
+from django.template.context_processors import csrf
 from django.contrib.auth import *
 from django.shortcuts import redirect
 from django import forms
