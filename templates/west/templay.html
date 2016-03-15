@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ label }}</h1>
+<p>{{ labelname }}</p>
+<p>{{ staffs }}</p>
+{% for item in staffs %}
+<p>{{ item.id }},{{ item.name }}</p>
+{% endfor %}
+<p>{{ list.1 }},{{ list.2.name }}</p>
+<p>{{ dict.name }},{{ dict.age }}</p>
+{% if True %}
+    <p>{{ staffs.1.name }}</p>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>get方法</p>
+<form action="/west/investigate/" method="get">
+  <input type="text" name="staff">
+  <input type="submit" value="Submit">
+</form>
+<p>post方法</p>
+<form action="/west/form/" method="post">
+  {% csrf_token %}
+  <input type="text" name="staff">
+  <input type="submit" value="Submit">
+</form>
+<p>new add:{{ rlt }}</p>
+<p>all:{{ staff }}</p>
+</body>
+</html>

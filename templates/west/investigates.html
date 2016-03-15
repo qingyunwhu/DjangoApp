@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/west/investigates/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}{#相当于输入框#}
+{#    {{ form.as_p }}#}
+  <input type="submit" value="Submit">
+</form>
+
+{% for person in staff %}
+<p>{{ person }}</p>
+{% endfor %}
+</body>
+</html>
